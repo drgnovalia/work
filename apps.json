@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Data Skrining",
+        "description": "Data skrining bulanan puskesmas.",
+        "url": "https://docs.google.com/spreadsheets/d/1xJPC4RIZ3i33xOY8ihBrdym0NpgowV2sbKGiPU6wTjM/edit?usp=sharing",
+        "category": "document",
+        "tag": "Document"
+    },
+    {
+        "name": "Catatan Tugas",
+        "description": "Catatan tugas penting.",
+        "url": "https://lognova.blogspot.com/",
+        "category": "app",
+        "tag": "App"
+    }
+]

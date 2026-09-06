@@ -1,0 +1,273 @@
+/* --- Reset & Base Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f1ea; /* Latar belakang krim/off-white sesuai gambar */
+    color: #000000; /* Teks hitam pekat */
+    line-height: 1.5;
+    padding-bottom: 80px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- Header --- */
+.header {
+    background-color: #f4f1ea;
+    color: #000000;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 4px solid #000000; /* Garis pembatas tebal di bawah header */
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* --- Controls (Search & Nav) --- */
+.controls {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Kotak Pencarian Neo-Brutalist */
+#searchInput {
+    width: 100%;
+    padding: 18px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 3px solid #000000;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: inherit;
+    outline: none;
+    /* Hard shadow khas Neo-Brutalism */
+    box-shadow: 5px 5px 0px #000000;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+#searchInput:focus {
+    transform: translate(-2px, -2px);
+    box-shadow: 7px 7px 0px #000000;
+}
+
+/* Navigasi Kategori */
+.category-nav {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Tombol Kategori */
+.nav-btn {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 3px solid #000000;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    font-family: inherit;
+    box-shadow: 4px 4px 0px #000000;
+    transition: all 0.1s ease;
+}
+
+.nav-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #000000;
+}
+
+/* Warna hijau stabilo/kuning menyala saat aktif seperti menu di gambar */
+.nav-btn.active {
+    background-color: #d2ff2b; 
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px 0px #000000;
+}
+
+/* --- Link Grid & Cards --- */
+.link-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Neo-Brutalist Card */
+.card {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 6px 6px 0px #000000;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 10px 10px 0px #000000;
+}
+
+/* Bagian Atas Card (Judul & Tag) */
+.card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: #000000;
+    line-height: 1.2;
+}
+
+.card p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #555555;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+/* Informasi Tag / Badge */
+.card-tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Variasi Warna Tag Berdasarkan Kategori untuk Estetika */
+.card.document .tag { background-color: #3498db; color: white; }
+.card.app .tag { background-color: #9b59b6; color: white; }
+.card.tools .tag { background-color: #1abc9c; }
+.card.social .tag { background-color: #ff7675; }
+
+/* Tombol Aksi "Buka Aplikasi" seperti tombol "LIHAT KUIS" */
+.card-link {
+    display: block;
+    text-align: center;
+    padding: 14px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 3px solid #000000;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 4px 4px 0px #000000;
+    transition: all 0.1s ease;
+}
+
+.card-link:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px 0px #000000;
+}
+
+/* --- Helpers & Footer --- */
+.no-results {
+    text-align: center;
+    padding: 50px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border: 3px dashed #000000;
+    background-color: #ffffff;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000000;
+    background-color: #f4f1ea;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 4px solid #000000;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 600px) {
+    .header h1 { font-size: 2rem; }
+    .controls { gap: 15px; }
+    .nav-btn { flex-grow: 1; text-align: center; }
+    .card { box-shadow: 4px 4px 0px #000000; }
+}
+
+/* --- Navigasi Paginasi Neo-Brutalist --- */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 40px 0 20px 0;
+}
+
+.page-btn {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: 3px solid #000000;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    font-family: inherit;
+    box-shadow: 3px 3px 0px #000000;
+    transition: all 0.1s ease;
+}
+
+.page-btn:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 0px #000000;
+}
+
+/* Halaman Aktif menggunakan warna kuning stabilo khas */
+.page-btn.active {
+    background-color: #d2ff2b;
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px 0px #000000;
+}
+
+/* Tombol Sebelumnya/Selanjutnya saat tidak bisa diklik */
+.page-btn:disabled {
+    background-color: #bdc3c7;
+    color: #7f8c8d;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: 0px 0px 0px #000000;
+    opacity: 0.6;
+}

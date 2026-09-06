@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Nova - Link List</title>
+    <!-- Tema warna untuk mobile browser & PWA -->
+    <meta name="theme-color" content="#34495e">
+    <link rel="stylesheet" href="style.css">
+    <!-- Menggunakan Google Fonts Montserrat untuk Flat Design yang bersih -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <h1>App Nova</h1>
+        <p>Kumpulan link kebutuhan kerja Novalia</p>
+    </header>
+
+    <main class="container">
+        <!-- Area Pencarian & Kontrol -->
+        <section class="controls">
+            <input type="text" id="searchInput" placeholder="Cari aplikasi berdasarkan nama atau deskripsi..." autocomplete="off">
+            
+            <!-- Filter Navigasi Kategori (Untuk merapikan jika link terlalu banyak) -->
+            <div class="category-nav" id="categoryNav">
+                <button class="nav-btn active" data-category="all">Semua</button>
+                <button class="nav-btn" data-category="document">Dokumen</button>
+                <button class="nav-btn" data-category="app">Aplikasi</button>
+            </div>
+        </section>
+
+        <!-- Container untuk Daftar Link -->
+        <section class="link-grid" id="linkGrid">
+            <!-- Data tautan akan di-render secara dinamis oleh JavaScript -->
+        </section>
+
+        <!-- NAVIGASI NOMOR HALAMAN (Tambahkan ini) -->
+        <div class="pagination" id="paginationNav"></div>
+        
+        <!-- Pesan ketika pencarian kosong -->
+        <div id="noResults" class="no-results hidden">Aplikasi tidak ditemukan.</div>
+    </main>
+<!-- 
+    <footer class="footer">
+        <p>&copy; 2026 App Registry. Dibuat dengan konsep Flat Design.</p>
+    </footer> -->
+
+    <script src="script.js"></script>
+    <script>
+        // Opsional: Registrasi Service Worker dasar untuk fitur PWA (Offline)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch(err => console.log('SW registration failed: ', err));
+            });
+        }
+    </script>
+</body>
+</html>
