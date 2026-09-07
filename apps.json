@@ -7,6 +7,27 @@
         "tag": "Document"
     },
     {
+        "name": "Primary Care",
+        "description": "Aplikasi Primary Care BPJS.",
+        "url": "https://pcarejkn.bpjs-kesehatan.go.id/eclaim/login",
+        "category": "app",
+        "tag": "App"
+    },
+    {
+        "name": "Skrining BPJS",
+        "description": "Web Skrining BPJS Kesehatan.",
+        "url": "https://webskrining.bpjs-kesehatan.go.id/skrining",
+        "category": "app",
+        "tag": "App"
+    },
+    {
+        "name": "e-Puskesmas",
+        "description": "Aplikasi e-Puskesmas.",
+        "url": "https://pamekasan.epuskesmas.id/login",
+        "category": "app",
+        "tag": "App"
+    },
+    {
         "name": "Catatan Tugas",
         "description": "Catatan tugas penting.",
         "url": "https://lognova.blogspot.com/",
