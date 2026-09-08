@@ -14,6 +14,13 @@
         "tag": "App"
     },
     {
+        "name": "RME PDGI",
+        "description": "Aplikasi RME Praktekan.",
+        "url": "https://rme.pdgi.online/auth",
+        "category": "app",
+        "tag": "App"
+    },
+    {
         "name": "Skrining BPJS",
         "description": "Web Skrining BPJS Kesehatan.",
         "url": "https://webskrining.bpjs-kesehatan.go.id/skrining",
@@ -33,5 +40,26 @@
         "url": "https://lognova.blogspot.com/",
         "category": "app",
         "tag": "App"
+    },
+    {
+        "name": "YouTube",
+        "description": "Buat nonton video.",
+        "url": "https://www.youtube.com/",
+        "category": "entertainment",
+        "tag": "Entertainment"
+    },
+    {
+        "name": "Spotify",
+        "description": "Buat dengerin musik.",
+        "url": "https://open.spotify.com/",
+        "category": "entertainment",
+        "tag": "Entertainment"
+    },
+    {
+        "name": "YouTube Music",
+        "description": "Buat dengerin musik, tapi punya YouTube.",
+        "url": "https://music.youtube.com/",
+        "category": "entertainment",
+        "tag": "Entertainment"
     }
 ]
