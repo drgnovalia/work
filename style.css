@@ -166,7 +166,7 @@ body {
 /* Variasi Warna Tag Berdasarkan Kategori untuk Estetika */
 .card.document .tag { background-color: #3498db; color: white; }
 .card.app .tag { background-color: #9b59b6; color: white; }
-.card.tools .tag { background-color: #1abc9c; }
+.card.entertainment .tag { background-color: #1abc9c; }
 .card.social .tag { background-color: #ff7675; }
 
 /* Tombol Aksi "Buka Aplikasi" seperti tombol "LIHAT KUIS" */
